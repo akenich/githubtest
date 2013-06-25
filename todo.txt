@@ -1,0 +1,30 @@
+ny linje
+ny andre linje
+linje 3
+
+mysql -P 3313 -h db.sol.no -u root -p5rE -e "FLUSH TABLES WITH READ LOCK"
+sleep 30
+cp -r /var/lib/mysql-slave2/wpblogg_prod
+UNLOCK TABLES
+# groupadd -g 2003 kenich && useradd -d /storage/home/kenich/ -u 2003 -g 2003 kenich
+
+restart mysql.
+
+Sjekk at DB'en ikke synker.
+
+mysql -P 3313 -h db.sol.no -u root -p5rE -e "SHOW SLAVE STATUS"
+Legg merke til at wp-blogg ikke blir synket.
+
+ SHOW GLOBAL STATUS LIKE 'Opened_tables';
+
+/var/local/wpblogg_backup/
+
+SET GLOBAL 
+
+Biler Johan 1 år.
+Bilder fra 2 siste årene.
+fra 1 til 3 år.
+
+Her er en ny linje.
+
+Her er til ny linje.
